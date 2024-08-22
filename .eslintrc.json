@@ -1,11 +1,25 @@
 {
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "root": true,
   "extends": [
+    "next",
+    "next/core-web-vitals",
     "eslint:recommended",
-    "plugin:@next/next/recommended",
     "plugin:prettier/recommended"
   ],
-  "plugins": ["prettier"],
+  "plugins": ["prettier", "react-hooks"],
   "rules": {
-    "prettier/prettier": ["error"]
+    "prettier/prettier": ["error"],
   }
 }
